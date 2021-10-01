@@ -54,7 +54,9 @@ function App() {
         <button onClick={() => collectNodeData(null)}>Add Root Item</button>
       }
 
-      {printNodes(tree)}
+      {Object.keys(tree).length > 0 &&
+        printNodes(tree)
+      }
     </div>
   );
 }
